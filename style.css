@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 10%;
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+
+.logo{
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.btn{
+    padding:10px 20px;
+    margin-top:20px;
+    border:none;
+    background:#38bdf8;
+    color:black;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* SECTIONS */
+section{
+    padding:100px 10%;
+}
+
+.about, .projects, .contact{
+    text-align:center;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:10px;
+    width:300px;
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0f172a;
+}
