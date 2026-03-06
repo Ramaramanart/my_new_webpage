@@ -1,25 +1,27 @@
-const text = ["Frontend Developer", "UI/UX Designer", "Problem Solver"];
+const text = ["Frontend Developer", "UI/UX Designer", "Creative Coder"];
+
 let count = 0;
 let index = 0;
 let currentText = "";
 let letter = "";
 
-(function type() {
+(function typing(){
 
-    if(count === text.length){
-        count = 0;
-    }
+if(count === text.length){
+count = 0;
+}
 
-    currentText = text[count];
-    letter = currentText.slice(0, ++index);
+currentText = text[count];
 
-    document.getElementById('typing').textContent = letter;
+letter = currentText.slice(0, ++index);
 
-    if(letter.length === currentText.length){
-        count++;
-        index = 0;
-    }
+document.getElementById("typing").textContent = letter;
 
-    setTimeout(type, 150);
+if(letter.length === currentText.length){
+count++;
+index = 0;
+}
+
+setTimeout(typing,150);
 
 })();
